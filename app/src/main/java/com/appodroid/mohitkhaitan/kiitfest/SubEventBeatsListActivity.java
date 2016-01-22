@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.appodroid.mohitkhaitan.kiitfest.Adapters.SubEventAdapter;
 import com.nhaarman.listviewanimations.appearance.simple.ScaleInAnimationAdapter;
@@ -84,7 +83,9 @@ public class SubEventBeatsListActivity extends AppCompatActivity {
 //                        Toast.makeText(getApplicationContext(),"Card 5",Toast.LENGTH_SHORT).show();
                         break;
                     case 5:
-                        Toast.makeText(getApplicationContext(),"Card ",Toast.LENGTH_SHORT).show();
+                        intentBeats = new Intent(getApplicationContext(),BeatsZaraNachKeDikha.class);
+                        startActivity(intentBeats);
+//                        Toast.makeText(getApplicationContext(),"Card ",Toast.LENGTH_SHORT).show();
                         break;
                 }
 

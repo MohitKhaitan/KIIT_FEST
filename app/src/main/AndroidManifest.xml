@@ -60,6 +60,10 @@
             android:parentActivityName=".SubEventBeatsListActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:label=""/>
+        <activity android:name=".BeatsZaraNachKeDikha"
+            android:parentActivityName=".SubEventBeatsListActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label=""/>
 
         <!-- BEATS SUB EVENT ACTIVITY END-->
 
