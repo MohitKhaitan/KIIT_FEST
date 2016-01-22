@@ -74,7 +74,9 @@ public class SubEventBeatsListActivity extends AppCompatActivity {
 //                        Toast.makeText(getApplicationContext(),"Card 3",Toast.LENGTH_SHORT).show();
                         break;
                     case 3:
-                        Toast.makeText(getApplicationContext(),"Card 4",Toast.LENGTH_SHORT).show();
+                        intentBeats = new Intent(getApplicationContext(),BeatsRiffERandom.class);
+                        startActivity(intentBeats);
+//                        Toast.makeText(getApplicationContext(),"Card 4",Toast.LENGTH_SHORT).show();
                         break;
                     case 4:
                         Toast.makeText(getApplicationContext(),"Card 5",Toast.LENGTH_SHORT).show();

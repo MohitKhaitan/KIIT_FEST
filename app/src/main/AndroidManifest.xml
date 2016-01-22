@@ -52,6 +52,10 @@
             android:parentActivityName=".SubEventBeatsListActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:label=""/>
+        <activity android:name=".BeatsRiffERandom"
+            android:parentActivityName=".SubEventBeatsListActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label=""/>
 
         <!-- BEATS SUB EVENT ACTIVITY END-->
 

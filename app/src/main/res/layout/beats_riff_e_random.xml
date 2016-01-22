@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbarlayout"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:fitsSystemWindows="true"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                app:contentScrim="?attr/colorPrimary"
+                app:expandedTitleMarginEnd="64dp"
+                app:expandedTitleMarginStart="48dp"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <ImageView
+                    android:id="@+id/backdrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+                    android:scaleType="centerCrop"
+                    app:layout_collapseMode="parallax" />
+
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    app:layout_collapseMode="pin"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <!-- Content to be  added here-->
+        <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/event_description_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Event Description"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/custom_button_design"
+                    android:textColor="#FFFFFF"
+                    android:padding="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/event_description_details"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="The exclusive event by the music society for all the semi-professional bands to go through the test of original composition and pass with soulful heart winning songs."
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:id="@+id/rules_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Rules And Regulations:"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/custom_button_design"
+                    android:padding="8dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/rules_details"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:text="
+1.	The line-up of the band has to remain same throughout the contest.\n\n
+
+2.	A band failing to play at least one original composition during semi-finals will be disqualified on spot.\n\n
+
+3.	The band can play instrumental original composition as well in the case of instrumental bands.\n\n
+
+4.	In Semi-Finals of Riff-e-Random, a group will be required to perform at least 2 songs.\n\n
+
+5.	(Including at least 1 original composition) within 15 minutes. (Amps on to amps off inclusive of sound check)\n\n
+
+6.	In Finals, a group will be required to perform at least 3 songs (including at least 1 original composition) within 30 minutes. (Amps on to amps off inclusive of sound check)\n\n
+
+7.	Marks will be deducted for exceeding the time limit.\n\n
+
+8.	The KIIT Fest 2016 team holds the right to change the rules at any moment of time.\n\n
+
+9.	Breach of any rules at any stage of the entire process will invite disqualification.\n\n
+
+10.	BANDS WILL BE DISQUALIFIED ON THE SPOT FOR MISCONDUCT, OBSCENITY OR FOUL LANGUAGE, AND WILL BE BANNED FROM PERFORMING AT ALL SUBSEQUENT EDITIONS OF KIIT FEST.\n\n
+
+11.	Equipment provided will be:\n\n
+
+•	One bass amplifier speaker\n
+
+•	One lead amplifier speaker\n
+
+•	Adequate microphones\n
+
+•	Drum set (you can bring along with your own cymbals and chokes/high hats)\n\n
+
+12.	Bands will have to bring their own musical instruments and special effects. However, programmed music is not allowed.\n\n
+
+13.	KIIT Fest will not be held responsible for the failure of any instrument.\n\n
+
+14.	The judges' decision shall be final and binding for all. No complaints or grievances regarding this will be attended to.\n\n
+
+15.	The organizing committee reserves the right to make any last minute change in the rules. The decision of the organizers with respect to line-up is final and abiding.\n
+"/>
+                <TextView
+                    android:id="@+id/rules_indemnification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Rights And Indemnification"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/custom_button_design"
+                    android:padding="8dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/rules_indemnification_details"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:text="By entering Riff-e-Random and submitting recordings to KIIT FEST, all entrants release, hold harmless and indemnify KIIT Fest, their employees, agents, and affiliates against all first, second and third party claims arising from any song and/or recording submitted which violates any of the competition rules or is the result of any breach of any warranty, representation, covenant or agreement and from any and all liability for any injuries or damage of any kind arising from or in connection with the competition. KIIT Fest is not responsible for late, lost, damaged or postage due entries or for any problems or delays arising from mail Carrier, common carrier or courier failure or malfunction. KIIT Fest reserves the right to disqualify any entry that does not meet the requirements herein outlined at any time.\n"/>
+
+                <TextView
+                    android:id="@+id/notes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="NOTE: 50% travel reimbursement policy will be valid for the Finalists and Semi-Finalists. This shall be conveyed to the bands after the prelims round of eliminations."
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+
+
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+
+
+</RelativeLayout>
