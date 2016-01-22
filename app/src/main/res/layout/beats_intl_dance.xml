@@ -61,106 +61,65 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="HELLO"
-                android:textSize="40dp" />
+                android:id="@+id/event_description_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Event Description"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/custom_button_design"
+                android:textColor="#FFFFFF"
+                android:padding="8dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"/>
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="HELLO"
-                android:textSize="40dp" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Dance till the stars come down from the rafters, Dance, Dance, Dance, till you drop! A team event where the team have to not only showcase their talent but also stay true to their traditions."
+                android:id="@+id/event_description_details"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true" />
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="HELLO"
-                android:textSize="40dp" />
+                android:id="@+id/rules_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Rules And Regulations:"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/custom_button_design"
+                android:padding="8dp"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"/>
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="HELLO"
-                android:textSize="40dp" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="1. Open for all students in a group of the competition.\n\n
+2. Candidate must choose a particular any country song and show their tradition or cultural dance along with their tradition costume (or similar to their attire).\n\n
+3. Most priority will be given to international students of different colleges and university for participation to show their tradition through a dance of their country."
+                android:id="@+id/rules_details"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="HELLO"
-                android:textSize="40dp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="HELLO"
-                android:textSize="40dp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="HELLO"
-                android:textSize="40dp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="HELLO"
-                android:textSize="40dp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="HELLO"
-                android:textSize="40dp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="HELLO"
-                android:textSize="40dp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="HELLO"
-                android:textSize="40dp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="HELLO"
-                android:textSize="40dp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="HELLO"
-                android:textSize="40dp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="HELLO"
-                android:textSize="40dp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="HELLO"
-                android:textSize="40dp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="HELLO"
-                android:textSize="40dp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="HELLO"
-                android:textSize="40dp" />
         </LinearLayout>
 
     </android.support.v4.widget.NestedScrollView>
@@ -168,4 +127,7 @@
 
 </android.support.design.widget.CoordinatorLayout>
 
-    </RelativeLayout>
+
+
+
+</RelativeLayout>
