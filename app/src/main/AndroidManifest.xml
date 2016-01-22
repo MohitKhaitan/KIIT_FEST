@@ -44,6 +44,10 @@
             android:parentActivityName=".SubEventBeatsListActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:label=""/>
+        <activity android:name=".BeatsIsleToGlory"
+            android:parentActivityName=".SubEventBeatsListActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label=""/>
 
         <!-- BEATS SUB EVENT ACTIVITY END-->
 
