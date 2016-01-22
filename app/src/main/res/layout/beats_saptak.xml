@@ -64,67 +64,68 @@
                     android:id="@+id/event_description_heading"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="Event Description"
                     android:layout_alignParentBottom="true"
                     android:layout_alignParentStart="true"
+                    android:layout_gravity="center"
                     android:layout_marginLeft="5dp"
-                    android:background="@drawable/custom_button_design"
-                    android:textColor="#FFFFFF"
-                    android:padding="8dp"
                     android:layout_marginTop="5dp"
-                    android:layout_gravity="center"/>
+                    android:background="@drawable/custom_button_design"
+                    android:padding="8dp"
+                    android:text="Event Description"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#FFFFFF" />
 
                 <TextView
+                    android:id="@+id/event_description_details"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:id="@+id/event_description_details"
-                    android:text="Saptak invites the musical pieces from the acoustic bands that challenges them to play without using any instrumental processors. Each band should have minimum of 3 members and maximum of 7 members."
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="10dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentStart="true" />
+                    android:text="Saptak invites the musical pieces from the acoustic bands that challenges them to play without using any instrumental processors. Each band should have minimum of 3 members and maximum of 7 members."
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
 
                 <TextView
                     android:id="@+id/rules_heading"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="Rules And Regulations:"
                     android:layout_alignParentBottom="true"
                     android:layout_alignParentStart="true"
+                    android:layout_gravity="center"
                     android:layout_marginLeft="5dp"
                     android:background="@drawable/custom_button_design"
                     android:padding="8dp"
-                    android:textColor="#FFFFFF"
-                    android:layout_gravity="center"/>
+                    android:text="Rules And Regulations:"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#FFFFFF" />
 
                 <TextView
+                    android:id="@+id/rules_details"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:id="@+id/rules_details"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="10dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentStart="true"
                     android:text="
-1.	There will be only one stage i.e., The Finale Stage.\n\n
+•	There will be only one stage i.e., The Finale Stage.\n\n
 
-2.	A band must be of a minimum of 3 members and maximum of 7 members.\n\n
+•	A band must be of a minimum of 3 members and maximum of 7 members.\n\n
 
-3.	The band can perform any song of their choice but it must be in either any Indian language or English.\n\n
+•	The band can perform any song of their choice but it must be in either any Indian language or English.\n\n
 
-4.	Only acoustic instruments will be allowed (guitar, violin, flute, etc.). No guitar or vocal processors are allowed. You can use a plugged in bass guitar and a keyboard (but only one single patch in keyboard).\n\n
+•	Only acoustic instruments will be allowed (guitar, violin, flute, etc.). No guitar or vocal processors are allowed. You can use a plugged in bass guitar and a keyboard (but only one single patch in keyboard).\n\n
 
-5.	Each band will be given a total of 15 mins, 5 mins sound check and 10 min of performance amp ON to amp OFF.\n\n
+•	Each band will be given a total of 15 mins, 5 mins sound check and 10 min of performance amp ON to amp OFF.\n\n
 
-6.	There should be No vulgarity in lyrics or the band will face immediate disqualification.\n"/>
+•	There should be No vulgarity in lyrics or the band will face immediate disqualification. \n
+"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
 
                 <TextView
                     android:id="@+id/notes_judge"
@@ -144,33 +145,35 @@
                     android:id="@+id/rules_judge"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="Judging Criteria"
                     android:layout_alignParentBottom="true"
                     android:layout_alignParentStart="true"
+                    android:layout_gravity="center"
                     android:layout_marginLeft="5dp"
                     android:background="@drawable/custom_button_design"
                     android:padding="8dp"
-                    android:textColor="#FFFFFF"
-                    android:layout_gravity="center"/>
+                    android:text="Judging Criteria"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#FFFFFF" />
+
                 <TextView
+                    android:id="@+id/rules_judging_criteria"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:id="@+id/rules_judging_criteria"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="10dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentStart="true"
                     android:text="
-1.	Overall performance and stage presence.\n\n
+•	Overall performance and stage presence.\n
 
-2.	Originality.\n\n
+•	Originality.\n
 
-3.	Technicality, etc.\n\n
-"/>
+•	Technicality, etc.\n\n
+
+"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
 
                 <TextView
                     android:id="@+id/notes"
@@ -192,8 +195,6 @@
 
 
     </android.support.design.widget.CoordinatorLayout>
-
-
 
 
 </RelativeLayout>

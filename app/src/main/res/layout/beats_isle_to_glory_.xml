@@ -113,16 +113,16 @@
                     android:layout_marginRight="5dp"
                     android:layout_marginTop="10dp"
                     android:text="
-1.	Valid ID card is required at the time of Registration.\n\n
-2.	All hip hop dancing techniques are allowed and recommended.\n\n
-3.	Break dance, electric boogie elements, acrobatics and lifts are allowed but they should not dominate.\n\n
-4.	Original choreos will be given more weightage.\n\n
-5.	Style diversity, variability of elements and technical standard are preferred.\n\n
-6.	Improvisations, harmony with music and original tricks are highly prized.\n\n
-7.	Collective, group or formation dancing should not dominate.\n\n
-8.	Dancers in battle part must respect the other dancer. (Mocking, touching and use of Abusive languages are not allowed).\n\n
-9.	One representative of your group/individual will be responsible for running the music during the competition. This person must remain at the sound area throughout the entire performance.\n\n
-10.	In the event a routine is interrupted because of failure of equipment, facilities, etc., then the participant(s) affected will be permitted to restart the routine from the beginning.\n\n
+•	Valid ID card is required at the time of Registration.\n\n
+•	All hip hop dancing techniques are allowed and recommended.\n\n
+•	Break dance, electric boogie elements, acrobatics and lifts are allowed but they should not dominate.\n\n
+•	Original choreos will be given more weightage.\n\n
+•	Style diversity, variability of elements and technical standard are preferred\n\n
+•	Improvisations, harmony with music and original tricks are highly prized.\n\n
+•	Collective, group or formation dancing should not dominate.\n\n
+•	Dancers in battle part must respect the other dancer. (Mocking, touching and use of Abusive languages are not allowed).\n\n
+•	One representative of your group/individual will be responsible for running the music during the competition. This person must remain at the sound area throughout the entire performance.\n\n
+•	In the event a routine is interrupted because of failure of equipment, facilities, etc., then the participant(s) affected will be permitted to restart the routine from the beginning.\n\n
 "
                     android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -180,12 +180,13 @@ Please bring TWO HIGH-QUALITY copies of your music to the competition.
                     android:layout_marginRight="5dp"
                     android:layout_marginTop="10dp"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="1.    1st Round- Showcase their performance (Team size:5-10, Duration:5mins max).\n\n
-2.  2nd Round- Challenge Round (On any of the given tracks 1 day before the round).\n\n
-3.	3rd Round- Final Round (Battle).\n\n
-4.	Usage of props is not allowed. However, dancing/playing with cap or clothes is allowed.\n\n
-5.	Substitutions may be made in the event of an injury or other serious circumstance. However, all substitutions must be pre-approved by organizers.\n\n
-6.	Performance Area Dimension: 30 feet x 30 feet.\n\n
+                    android:text="
+•	1st Round- Showcase their performance (Team size:5-10, Duration:5mins max)\n\n
+•	2nd Round- Challenge Round (On any of the given tracks 1 day before the round)\n\n
+•	3rd Round- Final Round (Battle)\n\n
+•	Usage of props is not allowed. However, dancing/playing with cap or clothes is allowed\n\n
+•	Substitutions may be made in the event of an injury or other serious circumstance. However, all substitutions must be pre-approved by organizers.\n\n
+•	Performance Area Dimension: 30 feet x 30 feet.\n\n
 "/>
 
 

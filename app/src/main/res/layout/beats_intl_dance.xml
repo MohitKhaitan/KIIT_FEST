@@ -106,9 +106,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="1. Open for all students in a group of the competition.\n\n
-2. Candidate must choose a particular any country song and show their tradition or cultural dance along with their tradition costume (or similar to their attire).\n\n
-3. Most priority will be given to international students of different colleges and university for participation to show their tradition through a dance of their country."
+                android:text="
+•	 Open for all students in a group of the competition.\n\n
+•	Candidate must choose a particular any country song and show their tradition or cultural dance along with their tradition costume (or similar to their attire).\n\n
+•	Most priority will be given to international students of different colleges and university for participation to show their tradition through a dance of their country.\n\n
+
+"
                 android:id="@+id/rules_details"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"

@@ -114,43 +114,78 @@
                     android:layout_alignParentBottom="true"
                     android:layout_alignParentStart="true"
                     android:text="
-1.	The line-up of the band has to remain same throughout the contest.\n\n
+•	The line-up of the band has to remain same throughout the contest.\n\n
 
-2.	A band failing to play at least one original composition during semi-finals will be disqualified on spot.\n\n
+•	A band failing to play at least one original composition during semi-finals will be disqualified on spot.\n\n
 
-3.	The band can play instrumental original composition as well in the case of instrumental bands.\n\n
+•	The band can play instrumental original composition as well in the case of instrumental bands.\n\n
 
-4.	In Semi-Finals of Riff-e-Random, a group will be required to perform at least 2 songs.\n\n
+•	In Semi-Finals of Riff-e-Random, a group will be required to perform at least 2 songs.\n\n
 
-5.	(Including at least 1 original composition) within 15 minutes. (Amps on to amps off inclusive of sound check)\n\n
+•	(Including at least 1 original composition) within 15 minutes. (Amps on to amps off inclusive of sound check)\n\n
 
-6.	In Finals, a group will be required to perform at least 3 songs (including at least 1 original composition) within 30 minutes. (Amps on to amps off inclusive of sound check)\n\n
+•	In Finals, a group will be required to perform at least 3 songs (including at least 1 original composition) within 30 minutes. (Amps on to amps off inclusive of sound check)\n\n
 
-7.	Marks will be deducted for exceeding the time limit.\n\n
+•	Marks will be deducted for exceeding the time limit.\n\n
 
-8.	The KIIT Fest 2016 team holds the right to change the rules at any moment of time.\n\n
+•	The KIIT Fest 2016 team holds the right to change the rules at any moment of time.\n\n
 
-9.	Breach of any rules at any stage of the entire process will invite disqualification.\n\n
+•	Breach of any rules at any stage of the entire process will invite disqualification.\n\n
 
-10.	BANDS WILL BE DISQUALIFIED ON THE SPOT FOR MISCONDUCT, OBSCENITY OR FOUL LANGUAGE, AND WILL BE BANNED FROM PERFORMING AT ALL SUBSEQUENT EDITIONS OF KIIT FEST.\n\n
+•	BANDS WILL BE DISQUALIFIED ON THE SPOT FOR MISCONDUCT, OBSCENITY OR FOUL LANGUAGE, AND WILL BE BANNED FROM PERFORMING AT ALL SUBSEQUENT EDITIONS OF KIIT FEST.\n\n
 
-11.	Equipment provided will be:\n\n
+•	Equipment provided will be:\n\n
 
-•	One bass amplifier speaker\n
+1.	One bass amplifier speaker\n
 
-•	One lead amplifier speaker\n
+2.	One lead amplifier speaker\n
 
-•	Adequate microphones\n
+3.	Adequate microphones\n
 
-•	Drum set (you can bring along with your own cymbals and chokes/high hats)\n\n
+4.	Drum set (you can bring along with your own cymbals and chokes/high hats)\n\n
 
-12.	Bands will have to bring their own musical instruments and special effects. However, programmed music is not allowed.\n\n
+•	Bands will have to bring their own musical instruments and special effects. However, programmed music is not allowed.\n\n
 
-13.	KIIT Fest will not be held responsible for the failure of any instrument.\n\n
+•	KIIT Fest will not be held responsible for the failure of any instrument.\n\n
 
-14.	The judges' decision shall be final and binding for all. No complaints or grievances regarding this will be attended to.\n\n
+•	The judges' decision shall be final and binding for all. No complaints or grievances regarding this will be attended to.\n\n
 
-15.	The organizing committee reserves the right to make any last minute change in the rules. The decision of the organizers with respect to line-up is final and abiding.\n
+•	The organizing committee reserves the right to make any last minute change in the rules. The decision of the organizers with respect to line-up is final and abiding.\n\n
+"/>
+
+                <TextView
+                    android:id="@+id/rounds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Rounds"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/custom_button_design"
+                    android:padding="8dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/round_details"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:text="
+•	Prelims (Online Round) - Selection by Judges. Judging would be done on the basis of video/track/link submitted.\n\n
+
+[NOTE: Studio recorded songs are recommended. Sending band profile (PDF) is not compulsory. The registration does not stand valid without the song sent to us via email or links of properly uploaded demos. The maximum length of the submission should not exceed 6 minutes]\n\n
+
+•	Semi-Finals - Best set of Bands from each zone will be selected to perform at the Semi-Finals of Riff-e-Random on the basis of Prelims (Online Round). A shortlist of bands would be released who will qualify to perform at the Semi-Finals.\n\n
+
+•	The Final Showdown – Minimum 4 bands would be selected from the Semi-Finals round for the Final Showdown of Riff-e-Random finale as per the participant quality and judges’ decision.\n\n
 "/>
                 <TextView
                     android:id="@+id/rules_indemnification"
