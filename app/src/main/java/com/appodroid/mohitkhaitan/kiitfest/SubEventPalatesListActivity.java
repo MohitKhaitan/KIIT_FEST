@@ -1,11 +1,11 @@
 package com.appodroid.mohitkhaitan.kiitfest;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.appodroid.mohitkhaitan.kiitfest.Adapters.SubEventAdapter;
 import com.nhaarman.listviewanimations.appearance.simple.ScaleInAnimationAdapter;
@@ -23,7 +23,7 @@ public class SubEventPalatesListActivity extends AppCompatActivity {
     Integer[] imgid={
             R.drawable.hocus_focus,
             R.drawable.indies,
-            R.drawable.shades_of_color
+            R.drawable.shadesofcolor
     };
 
     ListView listView;
@@ -48,15 +48,21 @@ public class SubEventPalatesListActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
+                Intent intentPalates;
                 switch (position){
                     case 0:
-                        Toast.makeText(getApplicationContext(), "Card 1", Toast.LENGTH_SHORT).show();
+                        intentPalates = new Intent(getApplicationContext(),PalatesHocusFocus.class);
+                        startActivity(intentPalates);
                         break;
+
                     case 1:
-                        Toast.makeText(getApplicationContext(),"Card 2",Toast.LENGTH_SHORT).show();
+                        intentPalates = new Intent(getApplicationContext(),PalatesIndies.class);
+                        startActivity(intentPalates);
                         break;
+
                     case 2:
-                        Toast.makeText(getApplicationContext(),"Card 3",Toast.LENGTH_SHORT).show();
+                        intentPalates = new Intent(getApplicationContext(),PalatesShades.class);
+                        startActivity(intentPalates);
                         break;
                 }
 

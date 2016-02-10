@@ -26,9 +26,9 @@ public class SubEventBeatsListActivity extends AppCompatActivity {
     Integer[] imgid={
             R.drawable.dance,
             R.drawable.isle_to_glory,
-            R.drawable.default_img,
-            R.drawable.default_img,
-            R.drawable.default_img,
+            R.drawable.ninad,
+            R.drawable.riff_e_random,
+            R.drawable.saptak,
             R.drawable.zara_nach_ke_dikha
     };
 

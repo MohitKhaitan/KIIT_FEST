@@ -1,11 +1,11 @@
 package com.appodroid.mohitkhaitan.kiitfest;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.appodroid.mohitkhaitan.kiitfest.Adapters.SubEventAdapter;
 import com.nhaarman.listviewanimations.appearance.simple.ScaleInAnimationAdapter;
@@ -28,12 +28,12 @@ public class SubEventQuillsListActivity extends AppCompatActivity {
     };
     Integer[] imgid={
             R.drawable.amalgam,
-            R.drawable.default_img,
+            R.drawable.does_grey_matter,
             R.drawable.jab_they_met,
-            R.drawable.default_img,
-            R.drawable.samagam,
-            R.drawable.medi_quiz,
-            R.drawable.default_img,
+            R.drawable.tspd,
+            R.drawable.open,
+            R.drawable.mediquiz,
+            R.drawable.shabdo_ki_jugalbandi,
             R.drawable.time_machine
     };
 
@@ -58,18 +58,39 @@ public class SubEventQuillsListActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
+                Intent intentQuills;
                 switch (position){
                     case 0:
-                        Toast.makeText(getApplicationContext(), "Card 1", Toast.LENGTH_SHORT).show();
+                        intentQuills = new Intent(getApplicationContext(),QuillsAmalgam.class);
+                        startActivity(intentQuills);
                         break;
                     case 1:
-                        Toast.makeText(getApplicationContext(),"Card 2",Toast.LENGTH_SHORT).show();
+                        intentQuills = new Intent(getApplicationContext(),QuillsDoesGreyMatter.class);
+                        startActivity(intentQuills);
                         break;
                     case 2:
-                        Toast.makeText(getApplicationContext(),"Card 3",Toast.LENGTH_SHORT).show();
+                        intentQuills = new Intent(getApplicationContext(),QuillsJabTheyMet.class);
+                        startActivity(intentQuills);
                         break;
                     case 3:
-                        Toast.makeText(getApplicationContext(),"Card 4",Toast.LENGTH_SHORT).show();
+                        intentQuills = new Intent(getApplicationContext(),QuillsKiitParli.class);
+                        startActivity(intentQuills);
+                        break;
+                    case 4:
+                        intentQuills = new Intent(getApplicationContext(),QuillsSamagam.class);
+                        startActivity(intentQuills);
+                        break;
+                    case 5:
+                        intentQuills = new Intent(getApplicationContext(),QuillsMediQuiz.class);
+                        startActivity(intentQuills);
+                        break;
+                    case 6:
+                        intentQuills = new Intent(getApplicationContext(),QuillsShabdo.class);
+                        startActivity(intentQuills);
+                        break;
+                    case 7:
+                        intentQuills = new Intent(getApplicationContext(),QuillsTimemachin.class);
+                        startActivity(intentQuills);
                         break;
                 }
 

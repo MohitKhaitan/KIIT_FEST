@@ -1,11 +1,11 @@
 package com.appodroid.mohitkhaitan.kiitfest;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.appodroid.mohitkhaitan.kiitfest.Adapters.SubEventAdapter;
 import com.nhaarman.listviewanimations.appearance.simple.ScaleInAnimationAdapter;
@@ -20,8 +20,8 @@ public class SubEventBillsListActivity extends AppCompatActivity {
             "MARKETHON",
     };
     Integer[] imgid={
-            R.drawable.default_img,
-            R.drawable.default_img,
+            R.drawable.brand_kart,
+            R.drawable.markethon,
     };
 
     ListView listView;
@@ -46,12 +46,15 @@ public class SubEventBillsListActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
+                Intent intentBills;
                 switch (position){
                     case 0:
-                        Toast.makeText(getApplicationContext(), "Card 1", Toast.LENGTH_SHORT).show();
+                        intentBills = new Intent(getApplicationContext(),BillsBrandkart.class);
+                        startActivity(intentBills);
                         break;
                     case 1:
-                        Toast.makeText(getApplicationContext(),"Card 2",Toast.LENGTH_SHORT).show();
+                        intentBills = new Intent(getApplicationContext(), BillsMarkethon.class);
+                        startActivity(intentBills);
                         break;
                 }
 

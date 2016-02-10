@@ -1,6 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
 
+    <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="220dp" />
+
+            <TextView
+                android:id="@+id/event_description_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button_design"
+                android:padding="8dp"
+                android:text="KIIT FEST 2016"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/event_description_details"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:text="KIIT FEST is a defining platform for the students and artists to showcase their skills and develop their potential. It is the first and the largest of its kind in east India and hopes to carve a niche for itself in the country. The fest is organized over 25 sq. km area campus accommodating 20 sprawling campuses. KIIT fest provides you an opportunity to let your imagination run wild and enjoy the extravaganza this march. It has workshops for the inquisitive minds, technical events to blow your mind, competitive debate, dance, drama and quizzing events for the artists and unwinding cultural shows for the freewheelers."
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/founder_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button_design"
+                android:padding="8dp"
+                android:text="Founders Message"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/founder_description_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="5dp"
+                android:gravity="fill_horizontal"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="With sunny Bhubaneswar skies, leafy trees dotting everywhere, plenty of green space across our 25 square kilometers, state-of-the-art campus, 27000 strong cosmopolitan and international student community, groovy hangout joints spread all across and very vibrant student community life on the KIIT University campus is pure bliss and more so during the KIIT-FEST, the Annual Festival of KIIT University.\n
+Every year the university holds this annual fest with an objective to give its students an opportunity to explore their own universe other than the pure academics. The beauty of the fest is that it is planned and organized by the students. Students participate in the annual fest with great enthusiasm, pomp and ceremony. KIIT-FEST has been one of the most favorite times of students not only from the university but also from students from universities all around the country and the world.\n
+I am glad KIIT University students’ community is going to roll out the university’s Annual Festival, KIIT- FEST-2016 on 4th - 6th March, 2016 with greater pomp and ceremony than previous years.\n
+I wish the organizers and the KIIT-FEST - 2016 a grand success!\n"/>
+
+            <TextView
+                android:id="@+id/founder_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="3dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Achyuta Samanta"/>
+
+            <TextView
+                android:id="@+id/kiit_kiss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="2dp"
+                android:textColor="#000000"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Founder, KIIT KISS"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
 </LinearLayout>

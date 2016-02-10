@@ -25,6 +25,6 @@ public class BeatsNinaad extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         imgView = (ImageView)findViewById(R.id.backdrop);
-        Glide.with(getApplicationContext()).load(R.drawable.default_img).into(imgView);
+        Glide.with(getApplicationContext()).load(R.drawable.ninad).into(imgView);
     }
 }

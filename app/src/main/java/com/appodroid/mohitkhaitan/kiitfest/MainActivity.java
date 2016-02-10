@@ -1,5 +1,6 @@
 package com.appodroid.mohitkhaitan.kiitfest;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -22,6 +23,8 @@ public class MainActivity extends AppCompatActivity
     Toolbar toolbar;
     TabLayout tabLayout;
     ViewPager viewPager;
+    DrawerLayout drawer;
+    NavigationView mNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,8 +40,11 @@ public class MainActivity extends AppCompatActivity
         tabLayout = (TabLayout)findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
 
+
+
         fab();
         drawer();
+
 
     }
 
@@ -46,7 +52,7 @@ public class MainActivity extends AppCompatActivity
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new KiitFragment(), "KF 2K16");
         adapter.addFragment(new EventFragment(), "EVENTS");
-        adapter.addFragment(new ContactFragment(), "CONTACT");
+        adapter.addFragment(new ContactUsFragment(), "CONTACT");
         viewPager.setAdapter(adapter);
     }
 
@@ -56,7 +62,7 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Registration Link will go LIVE soon", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
@@ -64,7 +70,7 @@ public class MainActivity extends AppCompatActivity
 
     private void drawer(){
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
@@ -112,19 +118,43 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
+
         if (id == R.id.nav_about_kiit_fest) {
-            // Handle the menu action
+
+            drawer.closeDrawer(GravityCompat.START);
+            viewPager.setCurrentItem(0, true);
+
         } else if (id == R.id.nav_events) {
 
-        } else if (id == R.id.nav_gallery) {
+            drawer.closeDrawer(GravityCompat.START);
+            viewPager.setCurrentItem(1, true);
 
         } else if (id == R.id.nav_hospitality) {
 
+            Intent hospiIntent = new Intent(this,ActivityHospitality.class);
+            startActivity(hospiIntent);
+
         } else if (id == R.id.nav_registration) {
 
-        } else if (id == R.id.nav_share) {
+            Intent regIntent = new Intent(this,ActivityRegistration.class);
+            startActivity(regIntent);
+
+        } else if (id == R.id.nav_developers) {
+
+            Intent devIntent = new Intent(this,ActivityDev.class);
+            startActivity(devIntent);
+
+//            final Dialog dialog = new Dialog(MainActivity.this);
+//            dialog.setContentView(R.layout.activity_dev);
+//            dialog.setTitle("");
+//            dialog.show();
+
+
 
         }else if(id == R.id.nav_contact_us){
+
+            drawer.closeDrawer(GravityCompat.START);
+            viewPager.setCurrentItem(2, true);
 
         }
 

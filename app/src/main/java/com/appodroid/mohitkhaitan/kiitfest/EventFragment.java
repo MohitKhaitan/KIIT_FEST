@@ -42,13 +42,13 @@ public class EventFragment extends Fragment {
 
     private void initializeImg() {
         imgData = new ArrayList<>();
-        imgData.add(new ImageData(R.drawable.default_img));
-        imgData.add(new ImageData(R.drawable.default_img));
-        imgData.add(new ImageData(R.drawable.default_img));
-        imgData.add(new ImageData(R.drawable.default_img));
-        imgData.add(new ImageData(R.drawable.default_img));
-        imgData.add(new ImageData(R.drawable.default_img));
-        imgData.add(new ImageData(R.drawable.default_img));
+        imgData.add(new ImageData(R.drawable.beats));
+        imgData.add(new ImageData(R.drawable.bills));
+        imgData.add(new ImageData(R.drawable.bolts));
+        imgData.add(new ImageData(R.drawable.fun));
+        imgData.add(new ImageData(R.drawable.palletes));
+        imgData.add(new ImageData(R.drawable.quills));
+        imgData.add(new ImageData(R.drawable.wardrobe));
 
 
     }
@@ -82,8 +82,8 @@ public class EventFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup cotainer, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_event, cotainer, false);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View rootView = inflater.inflate(R.layout.fragment_event, container, false);
 
         recyclerView = (RecyclerView) rootView.findViewById(R.id.event_recycler_view);
         recyclerView.setHasFixedSize(true);

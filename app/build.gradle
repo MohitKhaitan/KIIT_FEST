@@ -33,4 +33,14 @@ dependencies {
     compile 'com.nhaarman.listviewanimations:lib-core-slh:3.1.0@aar'
     compile files('libs/nineoldandroids-2.4.0.jar')
     compile 'com.android.support:palette-v7:22.2.1'
+    compile files('libs/AndroidUnusedResources1.6.2.jar')
+    compile 'com.daimajia.slider:library:1.0.9@aar'
+    compile 'com.squareup.picasso:picasso:2.5.1'
+    compile 'com.google.android.gms:play-services:7.8.0'
+
+    compile 'com.parse.bolts:bolts-android:1.+'
+    compile 'com.parse:parse-android:1.10.2'
+
+
+
 }

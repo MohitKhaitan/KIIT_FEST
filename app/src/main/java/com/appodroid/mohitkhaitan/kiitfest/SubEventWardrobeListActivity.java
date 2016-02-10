@@ -1,11 +1,11 @@
 package com.appodroid.mohitkhaitan.kiitfest;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.appodroid.mohitkhaitan.kiitfest.Adapters.SubEventAdapter;
 import com.nhaarman.listviewanimations.appearance.simple.ScaleInAnimationAdapter;
@@ -21,7 +21,7 @@ public class SubEventWardrobeListActivity extends AppCompatActivity {
             "SPOTLIGHT"
     };
     Integer[] imgid = {
-            R.drawable.default_img,
+            R.drawable.dekh_tamsha_dekh,
             R.drawable.road_de_vogue,
             R.drawable.spotlight
     };
@@ -48,15 +48,19 @@ public class SubEventWardrobeListActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
+                Intent intentWard;
                 switch (position) {
                     case 0:
-                        Toast.makeText(getApplicationContext(), "Card 1", Toast.LENGTH_SHORT).show();
+                        intentWard = new Intent(getApplicationContext(),WardrobeDekh.class);
+                        startActivity(intentWard);
                         break;
                     case 1:
-                        Toast.makeText(getApplicationContext(), "Card 2", Toast.LENGTH_SHORT).show();
+                        intentWard = new Intent(getApplicationContext(),WardrobeRoadDe.class);
+                        startActivity(intentWard);
                         break;
                     case 2:
-                        Toast.makeText(getApplicationContext(), "Card 3", Toast.LENGTH_SHORT).show();
+                        intentWard = new Intent(getApplicationContext(),WardrobeSpotlight.class);
+                        startActivity(intentWard);
                         break;
 
                 }

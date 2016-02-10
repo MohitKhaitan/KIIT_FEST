@@ -2,12 +2,43 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.appodroid.mohitkhaitan.kiitfest">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.appodroid.mohitkhaitan.kiitfest.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.appodroid.mohitkhaitan.kiitfest.permission.C2D_MESSAGE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
     <application
+        android:screenOrientation="portrait"
+        android:name=".ParsePushApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:largeHeap="true">
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_key" />
+
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
@@ -18,6 +49,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".ActivityHospitality"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".ActivityRegistration"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".ActivityDev"
+            android:parentActivityName=".MainActivity"/>
 
         <!-- MAIN EVENTS ACTIVITY START-->
 
@@ -67,7 +105,175 @@
 
         <!-- BEATS SUB EVENT ACTIVITY END-->
 
+        <!-- BILLS SUB EVENT ACTIVITY START-->
 
+        <activity android:name=".BillsBrandkart"
+            android:parentActivityName=".SubEventBillsListActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label=""/>
+        <activity android:name=".BillsMarkethon"
+            android:parentActivityName=".SubEventBillsListActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label=""/>
+
+        <!-- BILLS SUB EVENT ACTIVITY END-->
+
+        <!-- BOLTS SUB EVENT ACTIVITY STARTS-->
+        <activity android:name=".Bolts_Mad4Cad"
+            android:parentActivityName=".SubEventBillsListActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label=""/>
+        <activity android:name=".BoltsBridgeIT"
+            android:parentActivityName=".SubEventBillsListActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label=""/>
+        <activity android:name=".BoltsCode"
+            android:parentActivityName=".SubEventBillsListActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label=""/>
+        <activity android:name=".BoltsDeath"
+            android:parentActivityName=".SubEventBillsListActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label=""/>
+        <activity android:name=".BoltsMystifying"
+            android:parentActivityName=".SubEventBillsListActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label=""/>
+        <activity android:name=".BoltsProjextX"
+            android:parentActivityName=".SubEventBillsListActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label=""/>
+        <activity android:name=".BoltsRollaC"
+            android:parentActivityName=".SubEventBillsListActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label=""/>
+        <activity android:name=".BoltsSprialworld"
+            android:parentActivityName=".SubEventBillsListActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label=""/>
+        <activity android:name=".BoltsDrone"
+            android:parentActivityName=".SubEventBillsListActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label=""/>
+
+        <!-- BOLTS SUB EVENT ACTIVITY ENDS-->
+
+        <!-- FUN SUB EVENT ACTIVITY STARTS-->
+
+        <activity android:name=".FunAmazingRace"
+            android:parentActivityName=".SubEventBillsListActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label=""/>
+        <activity android:name=".FunJugoBonito"
+            android:parentActivityName=".SubEventBillsListActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label=""/>
+        <activity android:name=".FunMismatch"
+            android:parentActivityName=".SubEventBillsListActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label=""/>
+        <activity android:name=".FunMuggle"
+            android:parentActivityName=".SubEventBillsListActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label=""/>
+
+        <!-- FUN SUB EVENT ACTIVITY ENDS-->
+
+        <!-- PALATES SUB EVENT ACTIVITY STARTS-->
+
+        <activity android:name=".PalatesHocusFocus"
+            android:parentActivityName=".SubEventBillsListActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label=""/>
+        <activity android:name=".PalatesIndies"
+            android:parentActivityName=".SubEventBillsListActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label=""/>
+        <activity android:name=".PalatesShades"
+            android:parentActivityName=".SubEventBillsListActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label=""/>
+
+        <!-- PALATES SUB EVENT ACTIVITY ENDS-->
+
+        <!-- QUILLS SUB EVENT ACTIVITY STARTS-->
+
+        <activity android:name=".QuillsAmalgam"
+            android:parentActivityName=".SubEventBillsListActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label=""/>
+        <activity android:name=".QuillsDoesGreyMatter"
+            android:parentActivityName=".SubEventBillsListActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label=""/>
+        <activity android:name=".QuillsJabTheyMet"
+            android:parentActivityName=".SubEventBillsListActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label=""/>
+        <activity android:name=".QuillsKiitParli"
+            android:parentActivityName=".SubEventBillsListActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label=""/>
+        <activity android:name=".QuillsMediQuiz"
+            android:parentActivityName=".SubEventBillsListActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label=""/>
+        <activity android:name=".QuillsSamagam"
+            android:parentActivityName=".SubEventBillsListActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label=""/>
+        <activity android:name=".QuillsShabdo"
+            android:parentActivityName=".SubEventBillsListActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label=""/>
+        <activity android:name=".QuillsTimemachin"
+            android:parentActivityName=".SubEventBillsListActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label=""/>
+
+        <!-- QUILLS SUB EVENT ACTIVITY ENDS-->
+
+        <!-- WARDROBE SUB EVENT ACTIVITY STARTS-->
+
+        <activity android:name=".WardrobeDekh"
+            android:parentActivityName=".SubEventBillsListActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label=""/>
+        <activity android:name=".WardrobeRoadDe"
+            android:parentActivityName=".SubEventBillsListActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label=""/>
+        <activity android:name=".WardrobeSpotlight"
+            android:parentActivityName=".SubEventBillsListActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label=""/>
+
+        <!-- WARDROBE SUB EVENT ACTIVITY ENDS-->
+
+        <!-- Added for Parse push notifications -->
+
+        <service android:name="com.parse.PushService" />
+        <receiver
+            android:name="com.parse.ParsePushBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.DELETE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.appodroid.mohitkhaitan.kiitfest" />
+            </intent-filter>
+        </receiver>
+
+        <!-- /Added for Parse push notifications -->
 
     </application>
 
