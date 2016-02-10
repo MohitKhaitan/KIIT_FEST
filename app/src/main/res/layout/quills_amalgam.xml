@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbarlayout"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:fitsSystemWindows="true"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                app:contentScrim="?attr/colorPrimary"
+                app:expandedTitleMarginEnd="64dp"
+                app:expandedTitleMarginStart="48dp"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <ImageView
+                    android:id="@+id/backdrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+                    android:scaleType="centerCrop"
+                    app:layout_collapseMode="parallax" />
+
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    app:layout_collapseMode="pin"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <!-- Content to be  added here-->
+        <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/event_description_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Event Description"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/custom_button_design"
+                    android:textColor="#FFFFFF"
+                    android:padding="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Comics: A word which captivates the imagination of almost every child just at the mention of the word. So, we at KIIT FEST give you the opportunity to relive those childhood years by playing your favourite comic characters be it heroes or villains in an epic battle between the two greatest universes that the world of comics has to offer.\n DESCRIPTION:Two teams of superheroes and supervillains- DC and Marvel, fight against each other overa common problem statement. Participants take up the persona of the comic book character allotted to them.\n"
+                    android:id="@+id/event_description_details"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:id="@+id/rules_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Rules And Regulations"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/custom_button_design"
+                    android:padding="8dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="
+1.	The basic structure of the event would be a debate between various superheroes and supervillains of both the comic universes that is MARVEL and DC.\n\n
+2.	The structure of the meeting would be as follows:\n\n
+a.	MARVEL superheroes: 15\n
+b.	DC superheroes: 15\n
+c.	MARVEL supervillains: 15\n
+d.	DC supervillains: 15\n
+e.	Total portfolios: 60\n
+3.	The debate would start off with a roll call session, followed by a speakers list where the people would be added by raising their identity stubs.\n\n
+4.	At any point of time a subtopic can be raised under the main agenda which would be called “DIVERSION”. It would have normal voting and if passed a new list of speakers would be created.\n\n
+5.	The following would be explicit for this meeting:\n\n
+a.	Any superhero can challenge any supervillain at any time by just calling the term: “FACE OFF”\n
+b.	Superheroes can challenge their counterpart of the other universe and the same for supervillains at any time by calling the term: “STAND OFF”.\n
+c.	No parliamentary language as such would be followed but there should be no use of slangs.\n
+d.	The superpower of a superhero or a supervillain can be put to discussion whether it justifies him/her or not by uttering the term: “SHOW DOWN”.\n
+e.	All the above would be passed on discretion of the “SUPREME BOARD”i.e. the executive board consisting of JOR EL and NICK FURY.\n
+6.	If the participants so want, they can do a cosplay of the characters they are representing.\n\n
+AGENDA: THE QUESTION OF UNIFICATION OF THE MARVEL AND DC UNIVERSE\n
+"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true" />
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

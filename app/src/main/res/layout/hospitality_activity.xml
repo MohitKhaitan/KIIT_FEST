@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/location_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Location"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/custom_button_design"
+            android:textColor="#FFFFFF"
+            android:padding="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="\nAesthetic campuses of KIIT University are perched in the historic city of Bhubaneswar, the capital city of Odisha, which uniquely blends modernity with tradition.\n\n
+Bhubaneswar has excellent communication with the outside world. The city is conveniently linked to all the International Airports in India, by Air, Rail and Road.\n"
+            android:id="@+id/location_details"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/reach_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Reach Us"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/custom_button_design"
+            android:padding="8dp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/reachus_details"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:text="\nAir\n\nThe ‘Biju Patnaik’ Airport in Bhubaneswar has regular flights to and from all the major cities of India and to the state capitals. Work is in progression to upgrade the Biju Patnaik Airport into an International Airport.\n\nRailways\n\nThere are direct trains to and from Bhubaneswar to all the major cities of India. Railway is the most preferred, and it is a safe and cheap mode of travel in India, though it is slightly time consuming.\n\nRoad\n\nA well planned public transport system connects different locations within the city. It is connected with cities in Odisha and India through State and National Highways. Cars are readily available for hire from numerous travel agencies in the city.\n"/>
+
+        <TextView
+            android:id="@+id/distance_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Distance"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/custom_button_design"
+            android:padding="8dp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/distance_details"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:text="\nFrom Biju Patnaik International Airport - 13.4 Km\nFrom Bhubaneswar Railway Station - 11.8 Km\nFrom Jayadev Vihar Bus Stand	- 	8.0 Km\nFrom Acharya Vihar Bus Stand - 	8.4 Km\nFrom Baramunda Bus Stand - 12.1 Km\n"/>
+
+        <TextView
+            android:id="@+id/acco_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Accommodation"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/custom_button_design"
+            android:padding="8dp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/acco_details"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:text="\nAccommodation will be provided to the outstation participants in KIIT Hostel\n\n
+* For availing accommodation, the participant(s) has to first register"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

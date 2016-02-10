@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbarlayout"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:fitsSystemWindows="true"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                app:contentScrim="?attr/colorPrimary"
+                app:expandedTitleMarginEnd="64dp"
+                app:expandedTitleMarginStart="48dp"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <ImageView
+                    android:id="@+id/backdrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+                    android:scaleType="centerCrop"
+                    app:layout_collapseMode="parallax" />
+
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    app:layout_collapseMode="pin"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <!-- Content to be  added here-->
+        <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/event_description_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Event Description"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/custom_button_design"
+                    android:textColor="#FFFFFF"
+                    android:padding="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text=" It will be barbaric. It will be deceptive. Brawl of Machines with their metals acting as flint and steel. It is a game of style, control, damage and aggression with the robots smashing through each other in a deadly combat waiting for the other one to quit. These warriors shall duel for honour and loyalty in an arena of destructions with their pneumatic spikes, flipping tusks, angle grinders, hurling maces, hydraulic pincers and lots more.\n
+It is time to concentrate on the slashing and weaponizationof the robots. Now it is time to rumble. It's time war. Get ready to feel the chills and shivers down your spine and become a part of DeathWars, KIIT Fest 2016.\n
+1. TASK:\n
+Design a wired/wireless, manually controlled machine that is capable of knocking out the opponent or is able to score the maximum points.\n
+2. TEAM STRUCTURE:\n
+Teams can contain a maximum of 5 students. Students need not be from same institution. Each should be enrolled in an institution, and need to produce ID cards on event day.\n
+3. DESIGNING AND SPECIFICATION:\n
+3.1The initial dimension of the robot should not exceed 45cm x 45cm x 45cm (l x b x h).However there is no limitation on robot dimension once the match starts.\n
+3.2The weight of the machine should not exceed 20kg (excluding remote control and remote control wires).Tolerance of 5% is allowed.\n
+3.3In case of wired bots, the minimum length of the wires should be minimum 10 meters.\n
+
+The wires should remain slack at any instant during the fight. All the wires coming out of the machine should be stacked as a single unit. Also, the wires should beprojected minimum200mm high (not including in height constrain) to avoid entanglement.\n
+3.4 In case of wireless system, it should have a minimum two  frequency remote control circuit or two dual control circuits or a transmitter-receiver paired module so that frequency interferences with the opposing team can be avoided.\n
+Note: No readymade chassis, lego kits are allowed\n
+"
+                    android:id="@+id/event_description_details"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:id="@+id/rules_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Rules And Regulations"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/custom_button_design"
+                    android:padding="8dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="
+•	Event is open to all.\n\n
+•	Maximum team size is 5.\n\n
+•	Participants can form teams from different branches/ college/ university/ institute.\n\n
+•	No two teams must have any common member.\n\n
+•	No material will be provided by the University.\n\n
+•	No other adhesive except Fevicol would be allowed. The models found such would be disqualified.\n\n
+•	The Models are to be made up and brought to KSAC during the assigned time of KIITFEST.\n\n
+"
+                    android:id="@+id/rules_details"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:id="@+id/judging_duet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Judging Criteria(Duet)"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/custom_button_design"
+                    android:padding="8dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/judging_duet_criteria"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:text="The decision of the judges shall be final. Any monument that violates the rule above or the spirit of the competition will be disqualified.
+•	Load carrying capacity: 60. \n
+•	Design of structure: 10.  \n
+•	Weight of the bridge itself: 30.  \n
+"/>
+
+
+
+
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+
+
+</RelativeLayout>

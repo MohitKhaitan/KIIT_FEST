@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbarlayout"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:fitsSystemWindows="true"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                app:contentScrim="?attr/colorPrimary"
+                app:expandedTitleMarginEnd="64dp"
+                app:expandedTitleMarginStart="48dp"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <ImageView
+                    android:id="@+id/backdrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+                    android:scaleType="centerCrop"
+                    app:layout_collapseMode="parallax" />
+
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    app:layout_collapseMode="pin"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <!-- Content to be  added here-->
+        <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/event_description_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Event Description"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/custom_button_design"
+                    android:textColor="#FFFFFF"
+                    android:padding="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Overwhelm the audience with acting, direction, script and dialogues as teams take centre stage at ONE Act Play – the intercollegiate stage play competition. Let your own discretion be your tutor and suit the action to the word to fulfil the entire point of playing. Once the audience has settled and all is set, its Showtime!!\n "
+                    android:id="@+id/event_description_details"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:id="@+id/rules_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Rules And Regulations:"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/custom_button_design"
+                    android:padding="8dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="
+1.The team shall 1.The event will be held in two rounds: prelims and finals.\n
+2. Once a team registers, they will be sent a confirmation mail asking for their preference for a slot for prelims and lights practice. The organizing team shall try to give the preferential slot as long as it is available, the final decision rests in the hand of the organizers and participants are required to abide by it. They will also be informed regarding the lights practice slot in the mail in accordance with their play’s slot.\n
+3. In the prelims team will be given 20 minutes (empty stage to empty stage) to perform where they can present two or more scenes or acts. For lights practice, they will be given 15 minutes (empty stage to empty stage).\n
+4. For the finals total time allotted for the play to every team is 50 minutes (Empty stage to empty stage).\n
+5. If a team exceeds 50 minutes, gradually points will be deducted.\n
+6. Language of the play can be English/Hindi.\n
+7. No recorded vocals are allowed, only instrumental music is allowed.\n
+8. Microphones or backstage mikes for narration, lights, and a laptop to play sounds will be provided.\n
+9. The minimum number of participants per team is 5. In addition, there should be 1 person in charge of music and a maximum of 3 for lights.\n
+10. The teams are expected to bring their own music on CD or pen drive for the play.\n
+11. All clothes and accessories are to be arranged by the participating team. The organizing committee is responsible only for the infrastructural facilities only and shall not be responsible for the security of items left behind in green rooms or stage after the performance.\n
+12. Stage specifications: Stage area: 20ft x 36ft (approx.)\n
+13. Props can be used.\n
+14. No naked flames or live animals are allowed on stage.\n
+15. Requests for special effects and props should be communicated at least a week in advance. The same will be provided only if possible. The requests should be sent both by email and confirmed over telephone.\n
+16. In case of malfunctioning of any equipment provided, the team will be allowed to repeat their performance from the last scene change or from the point of disruption that the team wishes.\n
+17. The participating teams are requested to ensure that their presentation is in keeping with the dignity of the fest.\n
+18. The decision of the judges and the organizing team will be final and binding.\n
+"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true" />
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>
